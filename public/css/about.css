@@ -1,0 +1,336 @@
+* {
+    color: white;
+}
+
+.lefty {
+    width: 25%;
+    margin-top: 5%;
+}
+
+.lefty h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.lefty h1 span {
+    color: blueviolet;
+}
+
+.right img {
+    width: 75%;
+    height: 90%;
+}
+
+.photos {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.mt-12 {
+    margin-top: 3rem;
+}
+
+.button {
+    background-color: #ba85fd;
+    padding: 5px 15px;
+    margin-top: 10%;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.box {
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50%;
+    background-color: #ba85fd;
+}
+
+.box img {
+    width: 50%;
+}
+
+.box span {
+    opacity: 25%;
+    font-size: xx-large;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+}
+
+.down {
+    align-self: center;
+    font-weight: bold;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    align-self: center;
+}
+
+.down::before {
+    content: ' <──── ';
+    font-size: 16px;
+    color: white;
+}
+
+.up {
+    align-self: center;
+    font-weight: bold;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    align-self: center;
+}
+
+.up::before {
+    content: ' ────> ';
+    font-size: 16px;
+    color: white;
+}
+
+.users {
+    margin-top: 10%;
+}
+
+.what {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.think {
+    color: #ba85fd;
+    font-size: 2rem;
+}
+
+.member {
+    margin-top: 10rem;
+    font-weight: bold;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.team-member {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    width: calc(25% - 40px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member h2 {
+    margin: 0 0 10px;
+}
+
+.team-member p {
+    margin: 0;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .team-member {
+        width: calc(100% - 40px);
+    }
+}
+
+.description {
+    font-size: 18px;
+}
+
+.name {
+    font-size: medium;
+}
+
+.col {
+    height: 25rem;
+    box-shadow: -4px -5px 17px 0px #cbcbcb38;
+}
+
+@media (max-width: 1200px) {
+    .lefty {
+        width: 30%;
+    }
+
+    .right img {
+        width: 85%;
+    }
+
+    .box {
+        width: 85%;
+    }
+}
+
+@media (max-width: 992px) {
+    .lefty {
+        width: 40%;
+    }
+
+    .right img {
+        width: 90%;
+    }
+
+    .box {
+        width: 90%;
+    }
+
+    .what {
+        font-size: 4rem;
+    }
+
+    .think {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .lefty {
+        width: 50%;
+    }
+
+    .right img {
+        width: 100%;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .what {
+        font-size: 3rem;
+    }
+
+    .think {
+        font-size: 1.2rem;
+    }
+
+    .col {
+        height: auto;
+        margin-bottom: 2rem;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .mmm {
+        flex-direction: column-reverse !important;
+        align-items: center;
+        text-align: center;
+    }
+
+    .right {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .right img {
+        margin-top: 1rem;
+        justify-self: center;
+        width: 50%;
+        max-width: 200px;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .lefty {
+        width: 100%;
+    }
+
+    .lefty {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .box {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .box img {
+        width: 30%;
+        margin: 1rem 0;
+    }
+
+    .box span {
+        font-size: large;
+    }
+
+    .down,
+    .up {
+        writing-mode: horizontal-tb;
+        transform: none;
+    }
+
+    .down::before,
+    .up::before {
+        content: '';
+    }
+
+    .what {
+        font-size: 2.5rem;
+    }
+
+    .think {
+        font-size: 1rem;
+    }
+
+    .member {
+        margin-top: 5rem;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.fade-element {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
